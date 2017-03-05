@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+/*	height: 100%;
+    overflow: hidden;*/
+}
+
+body{
+	font:300 16px/1.5 'Lato', Arial, sans-serif;
+	color: #3C3C3C;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 940px;
+}
+.ba-header{
+	background: #aeb8ce url("../assets/hero-bg.jpg") 50% no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	min-height: 100vh;
+	padding: 285px 0 385px;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	line-height: 2;
+	position: relative;
+}
+.ba-container--hero{
+	max-width: 640px;
+}
+.ba-header__title{
+	font-size: 54px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .16em;
+	line-height: 1.3;
+	margin-bottom: 35px;
+	margin-top: 80px;
+}
+.ba-scroll{
+	background: url("../assets/scroll.svg") 50% no-repeat;
+	background-size: cover;
+	display: block;
+	width: 23px;
+	height: 37px;
+	position: absolute;
+	bottom: 115px;
+	left: 50%;
+	margin-left: -12px;
+}
+.ba-scroll:hover{
+	opacity: .6;
+}
+
+/* -- About Us --*/
+
+.ba-about{
+ 	padding: 160px 0;
+}
+.ba-box{
+	border: solid #3C3C3C;
+	border-width: 0 2px 2px;
+	padding: 65px 180px 26px;
+	text-align: center;
+	position: relative;
+}
+.ba-box:before,
+.ba-box:after{
+	display: block;
+	content: "";
+	position: absolute;
+	top: 0;
+	height: 2px;
+	width: 28%;
+	background-color: #3C3C3C;
+}
+.ba-box:before{
+	left: 0;
+}
+.ba-box:after{
+	right: 0;
+}
+.ba-box--light{
+	border-color: #fff;
+}
+.ba-box--light:before,
+.ba-box--light:after{
+	background: #fff;
+}
+.ba-box :last-child{
+	margin-bottom: 0;
+}
+.ba-box__title{
+	font-size: 34px;
+	position: absolute;
+	top: 0;
+	left: 28%;
+	width: 44%;
+	text-transform: uppercase;
+	transform: translateY(-50%);
+}
+
+/* -- Services --*/
+
+.ba-section{
+	padding: 130px 0 110px;
+}
+.ba-section--services{
+	background: url("../assets/services.jpg") 50% no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+
+/* -- what we do --*/
+.ba-section--what-we-do{
+	padding: 120px 0 115px;
+	font-size: 14px;
+}
+.ba-box--what-we-do{
+	padding: 125px 180px 90px;
+}
+.ba-box__title--small{
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 35px 0;
+}
+.ba-box--what-we-do img{
+	margin-top: 105px;
+}
+.ba-box--what-we-do img:first-of-type{
+	margin-top: 0;
+}
+
+/*-- Gallery --*/
+.ba-section--gallery-flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -10px;
+}
+.ba-flex-item{
+    width: 15%;
+    min-width: 350px;
+    height: 237px;
+    margin: 0 0 10px 10px;
+    flex-grow: 1;
+    position: relative;
+    padding: 170px 30px 0;
+}
+.ba-flex-item:nth-of-type(1){
+    background: #aeb8ce url("../assets/topworkz.jpg") 50% no-repeat;
+    background-size: cover;
+}
+.ba-flex-item:nth-of-type(2) {
+    background: #aeb8ce url("../assets/joint.jpg") 50% no-repeat;
+    width: 600px;
+    background-size: cover;
+}
+.ba-flex-item:nth-of-type(3){
+    background: #aeb8ce url("../assets/market.jpg") 50% no-repeat;
+    background-size: cover;
+}
+.ba-flex-item:nth-of-type(4){
+    background: #aeb8ce url("../assets/worktop.jpg") 50% no-repeat;
+    background-size: cover;
+}
+.ba-flex-item:nth-of-type(5){
+    background: #aeb8ce url("../assets/lable.jpg") 50% no-repeat;
+    width: 600px;
+    background-size: cover;
+}
+.ba-flex-item:nth-of-type(6){
+    background: #aeb8ce url("../assets/kyiv.jpg") 50% no-repeat;
+    background-size: cover;
+}
+.ba-flex-item:hover{
+    background-color: #aeb8ce;
+    background-blend-mode: multiply;
+}
+.ba-flex-item h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+/*-- Contact Us --*/
+
+.ba-section--contact{
+	padding: 138px 0 60px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.ba-box__contact-button{
+	color:  #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+   background:   #3c3c3c;
+	text-transform: uppercase;
+	padding: 0 22%;
+	height: 54px;
+	position: relative;
+    border-color: #3c3c3c;
+}
+.ba-box__contact-button:hover {
+    color: #3c3c3c;
+    box-shadow: 0 0 10px 4px #7b7b7b;
+    background: transparent;
+}
+
+/*-- Copyright --*/
+
+.ba-section--copyright{
+	padding:0 0 30px;
+}
+.ba-copyright__title{
+	font-size: 14px;
+	vertical-align: middle;
+	text-align: center;
+}
+.ba-copyright__title:before{
+	background: url("../assets/black-logo.svg") 50% no-repeat;
+	background-size: cover;
+	width: 35px;
+	height: 37px;
+	display: inline-block;
+	content:"";
+	vertical-align: middle;
+	margin-right: 36px;
+}
+/* Typography */
+h1, h2, h3, h4, h5, h6{
+	font-weight: 700;
+	letter-spacing: .16em;
+	line-height: 1.3;
+}
+p{
+	margin: 0 0 25px;
+}
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	border: none;
+	outline: none;
+
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
